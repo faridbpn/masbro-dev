@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Masbro Dev</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/images/intro/logosearch.jpg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <style>
+    .masthead {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .masthead-heading {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .masthead-subheading {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        background-color: #ff7b54;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #ff5722;
+    }
+
+     .page-section {
+       padding: 100px 0;
+   }
+
+   .fa-stack {
+       margin-bottom: 20px;
+   }
+
+   .section-heading {
+       font-size: 2.5rem;
+       font-weight: bold;
+   }
+
+   .section-subheading {
+       font-size: 1.2rem;
+       color: #6c757d;
+       margin-bottom: 50px;
+   }
+
+   .text-muted {
+       color: #6c757d !important;
+   }
+
+   /* Timeline styles for improved animation */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    list-style: none;
+}
+
+.timeline li {
+    margin: 0 0 3rem;
+    position: relative;
+}
+
+.timeline .timeline-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 7px solid #f7f7f7;
+    border-radius: 50%;
+    background: #2a2a2a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease-in-out;
+}
+
+.timeline .timeline-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.timeline-panel {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 1s forwards;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Bounce effect */
+.timeline-image.bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Zoom effect */
+.timeline-image.zoom {
+    animation: zoom 1.2s ease-out forwards;
+}
+
+/* Slide-in-right */
+.slide-in-right {
+    animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade effect for title and subtitle */
+.reveal-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+</style>
+
+    </style>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/images/intro/logomasbrodev.png" width="60px" alt="logoMasbro" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading" id="subheading">Welcome To MasbroDev!</div>
+                <div class="masthead-heading text-uppercase" id="heading">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services" id="cta">Tell Me More</a>
+            </div>
+        </header>        
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center" id="services-header">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">Berikut Beberapa Layanan Yang Kami Tawarkan</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4" id="service-1">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-internet fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Web Development</h4>
+                        <p class="text-muted">"Landing page profesional, modern, responsif, meningkatkan konversi bisnis, menarik perhatian audiens, dan membangun kepercayaan pelanggan."</p>
+                    </div>
+                    <div class="col-md-4" id="service-2">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Design</h4>
+                        <p class="text-muted">"Hidupkan idemu menjadi karya seni visual yang memukau. Dari logo yang ikonik hingga desain UI/UX yang intuitif, kami siap mewujudkan imajinasimu."</p>
+                    </div>
+                    <div class="col-md-4" id="service-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Training Class</h4>
+                        <p class="text-muted">"Tambah Skill Baru!, Pelajari cara merancang website keren dan desain keren serta manfaatkan kecerdasan buatan untuk menghasilkan karya yang unik."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Beberapa Karya & Kegiatan Kami</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item reveal-right">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid portfolio-img" src="assets/images/portfolio/masbroDesign.png" alt="bajumasbro" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Masbro T-shirt</div>
+                                <div class="portfolio-caption-subheading text-muted">Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item reveal-left">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid portfolio-img" src="assets/images/portfolio/ngajarlpk.jpg" alt="ngajarLPK" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Pelatihan AI LPK SO-CBI</div>
+                                <div class="portfolio-caption-subheading text-muted">Training Class</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item reveal-bottom">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid portfolio-img" src="assets/images/portfolio/ngajarundip.jpg" alt="ngajarUNDIP" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Pelatihan AI UNDIP</div>
+                                <div class="portfolio-caption-subheading text-muted">Training Class</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item reveal-bottom">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid portfolio-img" src="assets/images/portfolio/salut beriman.png" alt="salut" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Universitas Salut Beriman Website</div>
+                                <div class="portfolio-caption-subheading text-muted">Web Development</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item reveal-bottom">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid portfolio-img" src="assets/images/portfolio/tridata.png" alt="tridata" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Tri Data Profile Company</div>
+                                <div class="portfolio-caption-subheading text-muted">Web Development</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item reveal-bottom">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid portfolio-img" src="assets/images/portfolio/appdesign.jpg" alt="appdesign" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Umubet App Design</div>
+                                <div class="portfolio-caption-subheading text-muted">Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more portfolio items with varying animation classes -->
+                </div>
+            </div>
+        </section>
+          <!-- About-->
+          <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center reveal-fade">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <ul class="timeline">
+                    <li class="reveal-left">
+                        <div class="timeline-image bounce">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." />
+                        </div>
+                        <div class="timeline-panel slide-in-right">
+                            <div class="timeline-heading">
+                                <h4>2024</h4>
+                                <h4 class="subheading">Perjalanan Awal</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    "Kami, tim Masbrodev, lahir dari kesadaran bahwa masih banyak masyarakat Indonesia 
+                                    yang membutuhkan jasa desain dan IT berkualitas. Dengan semangat berbagi dan keinginan 
+                                    untuk memberdayakan masyarakat, kami mendirikan Masbrodev sebagai solusi kreatif untuk 
+                                    memenuhi kebutuhan desain dan teknologi yang beragam. Visi kami adalah menciptakan dampak 
+                                    positif melalui layanan yang inovatif, profesional, dan mudah dijangkau."
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted reveal-right">
+                        <div class="timeline-image zoom">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 id="team-heading" class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 id="team-subheading" class="section-subheading text-muted">Berikut Orang-Orang Hebat Dibalik Layar</h3>
+                </div>
+                <div class="row">
+                    <!-- Team Member 1 -->
+                    <div id="team-member-1" class="col-lg-6">
+                        <div class="team-member text-center">
+                            <img 
+                                id="team-member-1-img"
+                                class="mx-auto rounded-circle img-fluid" 
+                                src="assets/images/team/thumbnail.jpg" 
+                                alt="Muhammad Farid" 
+                                style="width: 200px; height: 200px; object-fit: cover;" />
+                            <h4 id="team-member-1-name">Muhammad Farid</h4>
+                            <p id="team-member-1-role" class="text-muted">Founder</p>
+                            <a id="team-member-1-instagram" class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/faridalkaltimi/" target="_blank" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+        
+                    <!-- Team Member 2 -->
+                    <div id="team-member-1" class="col-lg-6">
+                        <div class="team-member text-center">
+                            <img 
+                                id="team-member-2-img"
+                                class="mx-auto rounded-circle img-fluid" 
+                                src="assets/images/team/WhatsApp Image 2024-12-23 at 16.24.50_a4789a31.jpg" 
+                                alt="Ridwan Lukman" 
+                                style="width: 200px; height: 200px; object-fit: cover;" />
+                            <h4 id="team-member-2-name">Ridwan Lukman</h4>
+                            <p id="team-member-2-role" class="text-muted">Founder</p>
+                            <a id="team-member-2-instagram" class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/ridwan_idnsolo/" target="_blank" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="team-footer" class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p id="team-quote" class="large text-muted">"Kami adalah tim muda penuh energi, siap mengubah ide-idemu menjadi kenyataan dengan sentuhan kreatif."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <!-- bento layout -->
+          <!-- Contact-->
+           <!-- form -->
+         
+
+           <div class="container mt-5">
+            <div class="contact-form-container">
+                <h2 class="text-center">Contact Us</h2>
+                <form action="#" method="POST">
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+        
+                    <!-- Subject -->
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+        
+                    <!-- Message -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+        
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer py-5 bg-dark text-white mt-5">
+            <div class="container">
+                <div class="row text-center text-md-start align-items-center">
+                    <!-- Logo & Copyright -->
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="fw-bold">MasbroDev</h5>
+                        <p class="mb-0">Copyright &copy; MasbroDev 2024. All rights reserved.</p>
+                    </div>
+        
+                    <!-- Social Media Links -->
+                    <div class="col-md-4 mb-3 mb-md-0 text-center">
+                        <h6 class="fw-bold">Follow Us</h6>
+                        <a class="btn btn-outline-light btn-social mx-2" href="https://www.instagram.com/masbrodev_/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+        
+                    <!-- Quick Links -->
+                    <div class="col-md-4 text-center text-md-end">
+                        <h6 class="fw-bold">Quick Links</h6>
+                        <a class="link-light text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-light text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0 small">Made with <span style="color: red;">&#10084;</span> by MasbroDev Team</p>
+            </div>
+        </footer>
+        
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Desain Baju Masbro</h2>
+                                    <p class="item-intro text-muted">desain baju dengan menggabungkan capybara dan gfx</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/images/portfolio/masbroDesign.png" alt="..." />
+                                    <p>Beda dari yang lain!, Baju perdana masbro yang didesain dengan konsep gfx membuat tampilan dari masbro sendiri tetap mencolok walaupun banyak elemen tambahan yang menghiasi desain baju ini</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Self Project
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Pelatihan AI LPK SO-CBI</h2>
+                                    <p class="item-intro text-muted">Memperkenalkan kemajuan serta perkembangan AI kepada peserta LPK</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/images/portfolio/ngajarlpk.jpg" alt="ngajarLPK" />
+                                    <p>Pada kesempatan kali ini, kami membagikan sedikit ilmu kami tentang cara penggunaan ai yang efisien serta memaparkan perkembangan terbaru dan melakukan praktik langsung dengan para peserta</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            LPK SO-CBI Bogor & Depok
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Training Class
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Pelatihan AI UNDIP</h2>
+                                    <p class="item-intro text-muted">Memperkenalkan kemajuan serta perkembangan AI kepada peserta LPK</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/images/portfolio/ngajarundip.jpg" alt="ngajarUNDIP" />
+                                    <p>Pada kesempatan kali ini, kami membagikan sedikit ilmu kami tentang cara penggunaan ai yang efisien serta memaparkan perkembangan terbaru dan melakukan praktik langsung dengan para Mahasiswa</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Mahasiswa UNDIP
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Training Class
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Universitas Salut Beriman Website</h2>
+                                    <p class="item-intro text-muted">Website landing page yang memperkenalkan seputar universitas terbuka balikpapan</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/images/portfolio/salut beriman.png" alt="salutberiman" />
+                                    <p>Di website kali ini kami membuat website sederhana dengan HTML, CSS, dan JS untuk memperkenalkan universitas terbuka balikpapan dan disini kami hosting dengan netlify terlebih dahulu sebelum akhirnya dilakukan pembelian nama domain dan hosting</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Universitas Terbuka Balikpapan
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Web Development
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Tri Data Profile Company</h2>
+                                    <p class="item-intro text-muted">Website sederhana untuk memperkenalkan pelayanan apa saja yang disediakan oleh pt tridata</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/images/portfolio/postertridata.jpg" alt="tridata" />
+                                    <p>Di website kali ini kami membuat website sederhana dengan HTML, CSS, dan JS untuk memperkenalkan pt Tridata yang dimana client bisa melakukan pemesanan melalui tombol wa dan pesan template yang otomatis akan ada ketika tombol beli di klik</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Pt.Tridata
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Web Development
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Umubet App Design</h2>
+                                    <p class="item-intro text-muted">Design poster aplikasi</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/images/portfolio/appdesign.jpg" alt="appdesign" />
+                                    <p>Umubet merupakan aplikasi onlline shop mirip seperti shopee dan tokopedia namun bedanya aplikasi ini baru sampai di bidang UI design saja, dan sekarang pembuatan poster aplikasi ini ditunjukan agar masyarakat lebih mengenal aplikasi Umubet</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Self Project
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+    </body>
+</html>

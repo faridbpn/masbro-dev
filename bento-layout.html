@@ -1,0 +1,71 @@
+<div class="container my-5">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase">Our Gallery</h2>
+        <h3 class="section-subheading text-muted">Berikut Beberapa Dokumentasi Dari Kegiatan Kami</h3>
+      </div>
+    <div class="bento-box">
+        <!-- Large Item -->
+        <div class="bento-item large">
+            <img src="assets/images/portfolio/masbroDesign.png" alt="Large Item">
+        </div>
+
+        <!-- Medium Items -->
+        <div class="bento-item medium">
+            <img src="assets/images/portfolio/masbroDesign.png" alt="Medium Item 1">
+        </div>
+        <div class="bento-item medium">
+            <img src="assets/images/portfolio/masbroDesign.png" alt="Medium Item 2">
+        </div>
+
+        <!-- Small Items -->
+        <div class="bento-item small">
+            <img src="assets/images/portfolio/masbroDesign.png" alt="Small Item 1">
+        </div>
+        <div class="bento-item small">
+            <img src="assets/images/portfolio/masbroDesign.png" alt="Small Item 2">
+        </div>
+        <div class="bento-item small">
+            <img src="assets/images/portfolio/masbroDesign.png" alt="Small Item 3">
+        </div>
+        <div class="bento-item small">
+            <img src="assets/images/portfolio/masbroDesign.png" alt="Small Item 4">
+        </div>
+    </div>
+</div>
+.bento-box {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 120px;
+}
+
+.bento-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bento-item:hover img {
+    transform: scale(1.1);
+}
+
+.bento-item.large {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.bento-item.medium {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.bento-item.small {
+    grid-column: span 2;
+}
